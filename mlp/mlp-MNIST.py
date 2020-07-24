@@ -189,7 +189,6 @@ for epoch in range(epochs):
 # load last saved model with minimum valid_loss
 model.load_state_dict(torch.load('mlp_model_SGD_mnist.pt'))
 
-model.eval()
 test_loss = 0
 accuracy = 0
 model.eval()
